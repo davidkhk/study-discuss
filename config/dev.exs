@@ -2,7 +2,7 @@ import Config
 
 # Configure your database
 config :discuss, Discuss.Repo,
-  username: "kang",
+  username: "davidkang",
   password: "",
   hostname: "localhost",
   database: "discuss_dev",
