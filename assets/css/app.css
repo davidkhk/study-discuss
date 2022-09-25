@@ -1,6 +1,10 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
 
+.form-group {
+  margin-block: 25px;
+}
+
 /* Alerts and form errors used by phx.new */
 .alert {
   padding: 15px;
@@ -31,8 +35,8 @@
 }
 .invalid-feedback {
   color: #a94442;
-  display: block;
-  margin: -1rem 0 2rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 /* LiveView specific classes for your customization */
