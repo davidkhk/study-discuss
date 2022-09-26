@@ -34,3 +34,4 @@ npm-debug.log
 
 # Environment Variables
 /.env
+/config/prod.secret.exs
