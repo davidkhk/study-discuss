@@ -19,6 +19,11 @@
       src={Routes.static_path(@conn, "/assets/app.js")}
     >
     </script>
+    <script>
+      <%= if @conn.assigns.user do %>
+        window.userToken = "<%= Phoenix.Token.sign(DiscussWeb.Endpoint, "key", @conn.assigns.user.id) %>"
+      <% end %>
+    </script>
   </head>
   <body>
     <nav class="light-blue">
